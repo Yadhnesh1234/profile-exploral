@@ -1,10 +1,11 @@
-import Card from "./components/card";
-import Map from "./components/map"
+import Home from "./pages/home"
+import {Routes,Route} from "react-router-dom"
 function App() {
   return (
     <>
-    <Card/>
-    <Map/>
+<Routes>
+   <Route path="/home" element={<Home/>}></Route>
+</Routes>
     </>
   );
 }
